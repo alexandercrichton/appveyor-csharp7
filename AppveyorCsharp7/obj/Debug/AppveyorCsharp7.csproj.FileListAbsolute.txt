@@ -1,5 +1,0 @@
-c:\users\alex.crichton\documents\visual studio 2017\Projects\AppveyorCsharp7\AppveyorCsharp7\bin\Debug\AppveyorCsharp7.dll
-c:\users\alex.crichton\documents\visual studio 2017\Projects\AppveyorCsharp7\AppveyorCsharp7\bin\Debug\AppveyorCsharp7.pdb
-c:\users\alex.crichton\documents\visual studio 2017\Projects\AppveyorCsharp7\AppveyorCsharp7\obj\Debug\AppveyorCsharp7.csprojResolveAssemblyReference.cache
-c:\users\alex.crichton\documents\visual studio 2017\Projects\AppveyorCsharp7\AppveyorCsharp7\obj\Debug\AppveyorCsharp7.dll
-c:\users\alex.crichton\documents\visual studio 2017\Projects\AppveyorCsharp7\AppveyorCsharp7\obj\Debug\AppveyorCsharp7.pdb
