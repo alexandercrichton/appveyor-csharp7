@@ -14,5 +14,5 @@
 
     class Parent { }
 
-    class Child : Parent { }
+    class Child : Parent { } 
 }
