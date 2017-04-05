@@ -1,7 +1,10 @@
-﻿namespace AppveyorCsharp7
+﻿using Xunit;
+
+namespace AppveyorCsharp7
 {
-    public class Class1
+    public class TestClass
     {
+        [Fact]
         public void Test()
         {
             var parent = new Parent();
@@ -14,5 +17,5 @@
 
     class Parent { }
 
-    class Child : Parent { } 
+    class Child : Parent { }
 }
