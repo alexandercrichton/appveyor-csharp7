@@ -1,5 +1,6 @@
 ﻿using Csharp6Lib;
 using Xunit;
+using Moq;
 
 namespace AppveyorCsharp7
 {
@@ -8,6 +9,7 @@ namespace AppveyorCsharp7
         [Fact]
         public void Test()
         {
+            var mock = new Mock<Child>();
             var parent = new Parent();
             if (parent is Child child)
             {
