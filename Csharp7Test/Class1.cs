@@ -1,8 +1,8 @@
-﻿using Csharp6Lib;
-using Xunit;
+﻿using Xunit;
 using Moq;
+using Csharp6Lib;
 
-namespace AppveyorCsharp7
+namespace Csharp7Test
 {
     public class TestClass
     {

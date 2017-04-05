@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("AppveyorCsharp7")]
+[assembly: AssemblyTitle("Csharp7Test")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("AppveyorCsharp7")]
+[assembly: AssemblyProduct("Csharp7Test")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("3237530d-df8d-459f-86e5-413b84c41eb9")]
+[assembly: Guid("32d0f8ad-9fb4-4317-ad91-fe5a20af6247")]
 
 // Version information for an assembly consists of the following four values:
 //
