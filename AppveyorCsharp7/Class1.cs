@@ -13,7 +13,7 @@ namespace AppveyorCsharp7
             var parent = new Parent();
             if (parent is Child child)
             {
-
+                var tuple = (1, 2);
             }
         }
     }
