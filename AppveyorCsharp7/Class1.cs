@@ -1,4 +1,5 @@
-﻿using Xunit;
+﻿using Csharp6Lib;
+using Xunit;
 
 namespace AppveyorCsharp7
 {
@@ -14,8 +15,4 @@ namespace AppveyorCsharp7
             }
         }
     }
-
-    class Parent { }
-
-    class Child : Parent { }
 }
