@@ -1,0 +1,41 @@
+-
+  branches:
+    only:
+      - master
+  version: master-1.0.{build}
+  environment:
+    RunOctoPack: false
+    OctoPackEnforceAddingFiles: false
+  image: Visual Studio 2017
+  configuration: Release
+  services: postgresql
+  cache:
+    - "%LOCALAPPDATA%\\Yarn"
+  init:
+  - ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+  install:
+  - ps: >-
+      Install-Product node 4.2.1 x64
+  
+      New-Item -ItemType directory -Path C:/Temp
+  
+      (new-object net.webclient).DownloadFile('https://s3.amazonaws.com/aws-cli/AWSCLI64.msi', 'C:/Temp/AWSCLI64.msi')
+  
+      msiexec /i C:\Temp\AWSCLI64.msi /quiet /qn /norestart /log c:\temp\install.log
+
+      appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  nuget:
+    account_feed: true
+  before_build:
+  - cmd: >-
+      appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  
+      appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
+  
+      nuget-restore -verbosity detailed
+  build:
+    publish_wap_xcopy: false
+    publish_nuget: false
+    verbosity: minimal
+  on_finish:
+  - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
